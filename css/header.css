@@ -1,0 +1,101 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+.logo
+{
+    font-size:50px;
+    color:blue;
+    font-family: 'satisfy' , 'cursive';
+    margin-left:10px;
+}
+.tagline
+{
+    font-family:'satisfy','cursive';
+    margin-left:10px;
+}
+
+.button
+{
+    float:right;
+    margin:10px;
+    border:0px;
+    background:blue;
+    color:white;
+    width:70px;
+    height:30px;
+}
+
+.signUpPage
+{
+   text-align: center;
+   margin-top:5%;
+   
+}
+
+.signUpContent
+{
+    
+    background-color:white;
+    width:25%;
+    margin-left:35%;
+    padding:1%;
+}
+
+.SignUp
+{
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.forForm
+{
+    border-top:2px solid rgba(0,0,0,0.5);
+}
+#button{
+    background: green;
+    color:white;
+    border-radius: 0;
+
+}
+
+.formInput
+{
+    background:rgba(0,0,0,0.1) !important;
+}
+
+label
+{
+    font-weight: bold;
+}
+
+/* For Sign In*/
+.signInContent
+{
+    
+    background-color:white;
+    width:25%;
+    margin-left:35%;
+    margin-top:5%;
+    padding:1%;
+}
+
+.SignIn
+{
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.signInPage
+{
+   text-align: center;
+   margin-top:5%;
+}
+
+p{
+    text-align:center;
+    font-weight: bold;
+
+}
+span{
+    cursor: pointer;
+    color:blue;
+}

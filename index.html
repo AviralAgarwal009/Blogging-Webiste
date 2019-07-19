@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <div id="main-container-div">
+
+        <div class="header">
+
+            <!-- code for Sign Up, Sign In button here. code for "ScriBBler" heading and the sub-heading -->
+            <span class="logo">ScriBBler</span>
+            
+                <button class="button" id="signinButton" onclick="signUp()">Sign Up</button>
+            
+                <button class="button" id="signupButton" onclick="signIn()" >Sign In</button>
+           
+
+            <div class="tagline">Explore, Imagine, Create</div>
+
+        </div>
+           
+        <div class="postButtons">
+
+            <!--  code for All Posts & Create Post button  -->
+            <a href="html/bloglist.html"> 
+               <button class="postButton" id="commonStyle">All Posts</button>
+            </a>
+                
+            <button class="createButton" id="commonStyle">Create Post</button>
+
+
+            
+
+        </div>
+    </div>
+
+    <div id="modalSignIn" class="modal">
+
+        <!--  code for Sign In modal  -->       
+
+        <div class="signInContent" class="row justify-content-around">
+            <span class="close" onclick="getOutSignIn()">&times</span>
+
+            <form class="SignIn">
+                <h4 class="signInPage">Welcome Back!</h4>
+                <hr class="forForm">
+
+                <div class="form-group">
+                    <label for="UsernameI">Username</label>
+                    <input type="email" style="background: rgba(0, 0, 0, 0.1) ; border-radius:0" id="UsernameI" placeholder="Enter Username" class="form-control" required="">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="passwordI" >Password</label>
+                    <input type="password" style="background: rgba(0, 0, 0, 0.1) ; border-radius:0" id="passwordI" placeholder="Enter Password" class="form-control" required="">
+                </div>
+                <div class="form-group">
+                        <button type="submit" class="form-control" id="button">Sign In</button>
+                    </div>        
+            </form>
+
+            <p>Not a member? <span onclick="openSignUp()">Sign Up</span></p>
+
+        </div>
+
+    </div>
+
+    <!-- code for sign up modal -->
+
+    <div id="modalSignUp" class="modal">
+            
+
+        <div class="signUpContent" class="row justify-content-around">
+            <span class="close"  onclick="getOutSignUp()">&times</span>
+            
+               
+            
+            <form class="SignUp">
+                <h4 class ="signUpPage">Get Started</h4> 
+                <hr class="forForm">
+                <div class="form-group" >
+                    
+
+                    <label for="fullName">Full Name</label>
+                    <input type="text" style="background: rgba(0, 0, 0, 0.1) ; border-radius:0" id="fullName" placeholder="Enter Full Name" class="form-control" required="" >
+
+                </div>
+
+                <div class="form-group">
+                    <label for="Username">Username</label>
+                    <input type="email" style="background: rgba(0, 0, 0, 0.1) ; border-radius:0" id="Username" placeholder="Enter Username" class="form-control" required=""  >
+                </div>
+
+                <div class="form-group">
+
+                    <label for="password">Password</label>
+                    <input type="password"  style="background: rgba(0, 0, 0, 0.1) ; border-radius:0" id="password" placeholder="Enter Password" class="form-control" required=""  >
+
+                </div>
+
+                <div class="form-group">
+
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" style="background: rgba(0, 0, 0, 0.1) ; border-radius:0" id="confirmPassword" placeholder="Confirm Password" class="form-control" required="" >
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="form-control" id="button">Sign Up</button>
+                </div>                
+                
+                
+            </form>
+            
+
+            
+
+        </div>
+
+
+
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Create Post modal here -->
+
+    </div>
+
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
+</html>
